@@ -1,21 +1,56 @@
 # IdentityIcon
 
-**TODO: Add description**
+**An application to generate images from any string**
 
-## Installation
+## To run
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `identity_icon` to your list of dependencies in `mix.exs`:
+To run this application you only need to have `Elixir` installed in your machine.
 
-```elixir
-def deps do
-  [
-    {:identity_icon, "~> 0.1.0"}
-  ]
-end
+First of all you should install the dependencies:
+
+```shell
+mix deps.get
+```
+Once dependencies installed, you can generate the documentation:
+
+```shell
+mix docs
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/identity_icon](https://hexdocs.pm/identity_icon).
+Then you can run tests:
 
+```shell
+mix test
+```
+
+And finnaly you can start the `REPL`:
+
+```shell
+iex -S mix
+```
+
+## How to generate the image
+
+Inside the `REPL` you only need to run:
+
+```elixir
+iex> IdentityIcon.generate_image_from("string")
+:ok
+```
+
+Then if nothing goes wrong you will probably see a file called `string.png` inside the project folder.
+
+//Image here
+
+
+## Documentation
+
+To see the doc of this project you can access the html files inside your project folder.
+
+//Image here
+
+
+## TODO
+
+ - Create more unit tests
+ - Improve documentation
