@@ -40,17 +40,13 @@ iex> IdentityIcon.generate_image_from("string")
 
 Then if nothing goes wrong you will probably see a file called `string.png` inside the project folder.
 
-//Image here
+![Screenshot](string.png)
+
 
 
 ## Documentation
 
 To see the doc of this project you can access the html files inside your project folder.
 
-//Image here
+![Screenshot](doc.png)
 
-
-## TODO
-
- - Create more unit tests
- - Improve documentation
